@@ -6,7 +6,7 @@
 /*   By: aalnahas <aalnahas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 10:45:51 by aalnahas          #+#    #+#             */
-/*   Updated: 2025/10/29 10:55:36 by aalnahas         ###   ########.fr       */
+/*   Updated: 2025/11/08 16:04:37 by aalnahas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+
+// int main()
+// {
+// 	char str[] = "hel";
+// 	ft_bzero(str, 3);
+// 	printf("%s\n", str);
+// }

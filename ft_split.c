@@ -6,7 +6,7 @@
 /*   By: aalnahas <aalnahas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 14:02:20 by aalnahas          #+#    #+#             */
-/*   Updated: 2025/11/05 14:27:59 by aalnahas         ###   ########.fr       */
+/*   Updated: 2025/11/10 16:22:30 by aalnahas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	count_words(const char *s, char c)
 
 	words = 0;
 	i = 0;
+	if (s == NULL)
+		return (0);
 	while (s[i] != '\0')
 	{
 		while (s[i] != '\0' && s[i] == c)
@@ -77,5 +79,12 @@ char	**ft_split(char const *s, char c)
 		i += word_len(s + i, c);
 		j++;
 	}
-	return (newstr[j] = NULL, newstr);
+	newstr[j] = NULL;
+	return (newstr);
 }
+
+// int main()
+// {
+// 	char **str = ft_split("  hello world abdu  ", ' ');
+// 	printf("%s\n", str[2]);
+// }
